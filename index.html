@@ -188,7 +188,7 @@
                                 </div>
                             </div>
                             <div class="contact-details">
-                                <p class="mb-0 mt-2 text-muted">shopiee.netlify.app</p>
+                                <p class="mb-0 mt-2 text-muted" id="url"></p>
                             </div>
                         </div>
                     </div>
@@ -302,6 +302,12 @@
         <script src="js/counter.js"></script>
         <script src="js/navbar.js"></script>
         <script src="js/scroll.js"></script>
+
+        <script>
+            let url = window.document.URL;
+            // console.log(url);
+            document.getElementById("url").textContent = url;
+        </script>
         
     </body>
 </html>
